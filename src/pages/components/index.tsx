@@ -103,7 +103,7 @@ const HeroBanner = () => {
             <div className="bg-lime-800 p-3 rounded mb-4">
               <p className="text-sm font-semibold mb-1">Deporte</p>
               <div className="grid grid-cols-6 gap-2 text-center text-xs">
-                {["🚲", "🚵", "🚴‍♂️", "🚶‍♀️", "🏃‍♂️", "🏇"].map((icon, index) => (
+                {["🚲", "🚵", "🚴‍♂️", "🚶‍♀️", "🏃‍♂️"].map((icon, index) => (
                   <button key={index} className="bg-lime-600 p-2 rounded">
                     {icon}
                   </button>
@@ -141,12 +141,12 @@ const HeroBanner = () => {
               <input
                 type="text"
                 className="w-full p-2 rounded text-black"
-                defaultValue="A - Pentre-bach"
+                defaultValue="A - Opcion 1"
               />
               <input
                 type="text"
                 className="w-full p-2 rounded text-black"
-                defaultValue="B - Pentre-bach"
+                defaultValue="B - Opcion 2"
               />
               <p className="text-xs text-gray-500 text-center">
                 + 2 puntos de paso más
@@ -273,6 +273,18 @@ const HeroBanner = () => {
             className="w-full h-64 object-cover rounded-lg shadow"
           />
         </div>
+      </div>
+      <br />
+      <h1 className="text-2xl font-bold mb-4 text-center">Nuestro QR</h1>
+      <div
+        onClick={() => router.push("/qr")}
+        className="flex justify-center  h-screen"
+      >
+        <img
+          src="/images/qr.png"
+          alt="Imagen 3"
+          className="w-50 h-64 object-cover rounded-lg shadow"
+        />
       </div>
     </div>
   );
