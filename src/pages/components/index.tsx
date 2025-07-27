@@ -1,3 +1,4 @@
+import router, { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -265,7 +266,7 @@ const HeroBanner = () => {
             className="w-full h-64 object-cover rounded-lg shadow"
           />
         </div>
-        <div>
+        <div onClick={() => router.push("/qr")}>
           <img
             src="/images/Dotacion3.jpg"
             alt="Imagen 3"
